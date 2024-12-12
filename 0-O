@@ -1,0 +1,3 @@
+in the best case: O(n) comparisons, O(1)swaps
+in the average case: O(n^2) comparisons, O(n^2) swaps
+in the worst case: O(n^2) comparisons, O(n^2) swaps
