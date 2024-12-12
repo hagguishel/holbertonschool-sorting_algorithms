@@ -20,7 +20,7 @@ void bubble_sort(int *array, size_t size)
 	if (size < 2)
 		return;
 
-	while (i < size)
+	while (i < size - i)
 	{
 		j = 0;
 		while (j < size)
