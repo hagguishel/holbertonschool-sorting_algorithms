@@ -18,12 +18,6 @@ void selection_sort(int *array, size_t size)
 	if (array == NULL || size < 2)
 		return;
 
-	while (array[length] != 0)
-		length++;
-
-	if (length != size)
-		return;
-
 	while (i < size - 1)
 	{
 		j = i + 1;
