@@ -13,8 +13,9 @@ int lomuto_partition(int *array, int low, int high, size_t size)
 {
     int pivot = array[high];
     int i = low - 1;
+    int j;
 
-    for (int j = low; j < high; j++)
+    for (j = low; j < high; j++)  // Déclaration de 'j' avant la boucle
     {
         if (array[j] < pivot)
         {
@@ -52,7 +53,7 @@ void quick_sort_helper(int *array, int low, int high, size_t size)
         int pivot_index = lomuto_partition(array, low, high, size);
 
         quick_sort_helper(array, low, pivot_index - 1, size);
-        quick_sort_helper(array, pivot_index + 1, high, size);  // Correction ici
+        quick_sort_helper(array, pivot_index + 1, high, size);  /* Correction ici */
     }
 }
 
