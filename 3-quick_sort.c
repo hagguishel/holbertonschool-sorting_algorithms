@@ -15,7 +15,7 @@ int lomuto_partition(int *array, int low, int high, size_t size)
     int i = low - 1;
     int j;
 
-    for (j = low; j < high; j++)  // Déclaration de 'j' avant la boucle
+    for (j = low; j < high; j++)  /* Déclaration de 'j' avant la boucle */
     {
         if (array[j] < pivot)
         {
